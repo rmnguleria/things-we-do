@@ -1,0 +1,1 @@
+Android Project --> Build using Gradle --> Gradle [ Byte Code , Resources , Manifest ] . apk --> 

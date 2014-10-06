@@ -1,0 +1,84 @@
+Map Reduce
+
+Single Node Architecture
+
+     Bus
+CPU ----> Memory
+
+CPU
+Memory
+			"Classical" Data Mining
+Disk
+
+Motivation:Google example
+
+10 billion webpages size- 20kb
+
+total size -> 200 TB
+
+limitation with "Classical" approach is Disk read bandwidth(~ 50 MB/sec)
+
+time to read -> 46 days (approx)
+
+Simple Solution -> work this in parallel
+
+Cluster Architecture
+
+Consists of rack , commodity Linux nodes connected with a gigabit switch --> Data Center
+
+e.g -> Google has 1 million machines.
+
+Cluster computing challenges
+
+1. Node failures
+
+single server fails -> 3 yrs
+1000 server in cluster -> 1 fail / day
+1M server -> 1000 fails / day
+
+if node fails , how u store data persistently ??
+
+what if node fails during a long-running computation ?
+
+2. Network Bottleneck
+Bandwidth -> 1Gbps
+Moving 10TB approx. 1 day
+
+3. Distributed progarmming is hard ! . Need a simple model.
+
+Map-Reduce Solutions
+
+1. Store Data Redundantly
+
+2. Move computation close to data
+
+3. Simple programming model.
+
+Redundant Storage Infrastructure.
+
+Distributed File System -> e.g Google GFS , Hadoop
+
+Typical Usage Pattern
+
+. Huge Files
+. Data is rarely updated in place
+Typically , write the data once , read it multiple times and append it occasionly.
+
+DFS ->
+Data kept in 'chunks(16 - 64 MB)' on 'Chunk Server'
+
+Each 'chunk' replicated on different machines. (2x- 3x)
+
+. Ensures persistence and availabilty.
+
+Chunk Servers also serve as compute servers.
+
+Move the computation to where the data is.
+
+Master Node -> Name Node (Hadoop HFS)
+Stores metadata about where files are stored
+Might be replicated.
+
+Client Library for file access.
+Talk to master to find chink servers.
+Connects directly to chunk servers without going through master (p2p)

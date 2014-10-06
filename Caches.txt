@@ -1,0 +1,25 @@
+Core 2 Duo Processor 
+processes 256 bytes / cycle.
+
+Core 2 Duo bus which connects main memory and RAM
+can send data at the rate 2bytes/cycle . So the 
+latency is 100 cycles.
+
+Solution -> Caches
+comp. memory with short access time used for storage or frequently accessed data.
+
+Cache Mechanics --->>>
+
+Caches stores subset of memory
+
+->  Hit. 
+-> Miss.
+
+  CPU
+   |
+   |
+  Cache
+   |
+   |
+ Memory
+ 

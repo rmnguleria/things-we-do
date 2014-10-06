@@ -1,0 +1,6 @@
+ext4 file system -> very low fragmentation
+and defragmentation sucks !!!.
+
+viruses require root access. linux
+
+in linux u can update all the softwares and drivers by just one command.

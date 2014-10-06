@@ -1,0 +1,3 @@
+Simulation -> Continuous -> Discrete --> event-controlled ---> event-oriented ---> process-oriented --> time-controlled ---> quasi-continuous
+
+--> Continuous --> juggling 

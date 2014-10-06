@@ -1,0 +1,15 @@
+Normalization: Process of decomposing bad relations by breaking up their attributes into smaller relations.
+
+-> minimizing redundancy and minimizing I,D.U anomalies.
+
+first NF
+disallows multivalued attributes.
+-> remove attribute and place in separate relation.
+2nd NF
+-> separates FFD from partial dependencies.
+3rd NF
+-> transitive functional dependency.
+
+1 	3 	1 	2
+3 	3 	2 	2
+2 + 0 + 1 + 0 = 3

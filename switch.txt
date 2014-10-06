@@ -1,0 +1,24 @@
+Hub replicates a bit to all the interfaces connected.
+Generates a lot of unnecessary traffic.
+Cheapest way to create a network.
+Security Problems ....
+
+Switch
+
+uses MAC addresses to identify .
+using Switch table.
+Filling Switch tables.
+Send a packet . Switch identifies u . makes an entry . broadcast the message.
+
+Router. to send packet across networks.
+also do NAT and DHCP also access wifi.
+
+
+
+
+
+Network Layer -> IP addresses -> Routers.
+Link Layer -> MAC addresses -> Switches
+Physical -> Raw Data -> Hub
+
+
